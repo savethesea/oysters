@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,49 +11,249 @@
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <!-- index.css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>Oysters</title>
+    <!-- timeline css -->
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <title>Save The Sea</title>
+
   </head>
   <body>
-    <!-- nav container -->
-    <div class="container-fluid">
-      <!-- navigation menu -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-      <!-- navbar button -->
-      <div>
-        <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <span style="float:right;padding-top: 5px;font-size: 35px">Save The Oysters</span>
+<!-- navlink -->
+<div id="homeLink"></div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#homeLink" onclick="closeNav()">Home</a>
+  <a href="#missionLink" onclick="closeNav()">Mission</a>
+  <a href="#lettersLink" onclick="closeNav()">Letters</a>
+  <a href="#restaurantsLink" onclick="closeNav()">Restaurants in Austin</a>
+  <a href="#positiveFactorsLink" onclick="closeNav()">Positive Factors</a>
+  <a href="#collaborateLink" onclick="closeNav()">Restaurants happy to collaborate</a>
+  <a href="#timelineLink" onclick="closeNav()">Our Timeline</a>
+</div>
+  <!-- navbar -->
+  <div id="navbar">
+    <!-- navbar -->
+    <span style="font-size:30px;cursor:pointer;color:black;margin-left: 20px;" onclick="openNav()">&#9776;<span style="color:#51bff9;margin-right:20px;float:right">Save The Sea</span></span>
+  </div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!--   <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol> -->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="people3.jpg" alt="Second slide">
+      <div class="carousel-caption ">
+        <h3>Save the oysters by returning them home</h3>
+        <div class="space"></div>
       </div>
     </div>
-    <!-- header container -->
-    <div>
-      <div id="headerContainer">
-        <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/025B/production/_85730600_monkey2.jpg" alt="oysters" id="headerImage">
-        <div id="headerText">
-          <!-- header -->
-          <p>we will help by doing this now</p>
+<!--     <div class="carousel-item">
+      <img class="d-block img-fluid" src="people3.jpg" alt="Second slide">
+      <div class="carousel-caption ">
+        <h3>Save the oysters by returning them home</h3>
+        <p>...</p>
+        <div class="space"></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="people3.jpg" alt="Second slide">
+      <div class="carousel-caption ">
+        <h3>Save the oysters by returning them home</h3>
+        <p>...</p>
+        <div class="space"></div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+
+    <!-- about project container -->
+    <div class="container" id="missionLink">
+      <!-- about header -->
+      <h1 id="aboutHeader">Our Mission</h1>
+      <!-- about info -->
+      <p id="aboutInfo">Save The Sea's initiative is to pick up oyster shells at participating restaurants and return them to our coast to save our sea life</p>
+
+      <!-- chart of depletion of oysters-->
+      <img src="chart.png" class="img-fluid" id="oysterChart" alt="chart of depletion of oysters">
+      <p id="oysterChartName">Data provided by Lance Robinson From Texas Parks And Wildlife</p>
+      <h4 id="oysterChartInfo">Baby oysters Oyster's grow on top of other oyster's as this is thier habitat. Removing them from the ocean is removing their habitat and has depleted sea life by 60% in the last 20 years in Texas and 95% world wide; sending the oyster shells back to the ocean would help replenish the sea life and keep the circle of life going.</h4>
+    </div>
+
+
+    <div class="container" id="lettersLink">
+    </div>
+      <div class="row customInfoRow" id="lettersRow">
+          <div class="col-md-6 col-sm-12">
+            <!--  letter info -->
+            <h3 class="letterInfo">Letter from Texas Parks and Wildlife supporting our cause to haul the oyster shells back to the coast.</h3>
+            <a href="TexasParksAndWildLife.pdf"><h5>View Letter</h5></a>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <!-- letter image -->
+            <img src="TPD.png" height="400px" width="100%">
+          </div>
+      </div>
+
+      <div class="row customInfoRow">
+          <div class="col-md-6 col-sm-12">
+            <!--  letter info -->
+            <h3 class="letterInfo">Letter from Organics by Gosh willingness to help our cause with land and partnerships.</h3>
+            <!-- letter link -->
+            <a href="OrganicsByGosh.png" target="_blank"><h5>View Letter</h5></a>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <!-- letter image -->
+            <img src="OrganicsByGosh2.png" height="400px" style="width:250px">
+            <!-- navlink -->
+            <div id="restaurantsLink"></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- google map header -->
+      <h1 id="googleMapHeader">Oyster restaurants in collaboration with Save The Sea</h1>
+      </div>
+    <!-- google map -->
+    <div id="map"></div>
+
+    <!-- main container -->
+    <div class="container" id="positiveFactorsLink">
+      <!-- facts header -->
+      <h1 id="factsHeader">Positive Factors</h1>
+      <!-- row for image and info -->
+      <div class="row customInfoRow">
+        <div class="col-md-4 col-sm-12">
+          <!-- image -->
+          <img src="dolphin.jpg" width="100%" height="200px" class="infoImage">
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <!-- image info header -->
+            <h3 class="imageInfoHeader">Creating habitats for sea life</h3>
+          <!-- image info -->
+          <p>The oysters harvested from Texas Estuaries has a total annual impact of over $35 million here in Texas.
+Oysters enhance water quality, stabilizing shorelines, and providing habitat for dolphins, crab, red drum, and fish.</p>
+        </div>
+      </div>
+        <!-- row for image and info -->
+        <div class="row customInfoRow">
+          <div class="col-md-8 col-sm-12">
+            <!-- image info header -->
+            <h3  class="imageInfoHeader">Helping prevent flooding</h3>
+            <!-- image info -->
+            <p class="imageInfo">Currently Austin restaurants are throwing oyster shells that could be going back into the ocean and would equate to 7 acres of oyster reef alone helping prevent flooding.
+  </p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <!-- image -->
+            <img src="shore.jpg" width="100%" height="200px" class="infoImage">
+          </div>
+        </div>
+
+        <!-- row for image and info -->
+        <div class="row customInfoRow">
+          <div class="col-md-4 col-sm-12">
+            <!-- image -->
+            <img src="oyster.jpg" width="100%" height="200px" class="infoImage">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <!-- image info header -->
+            <h3 class="imageInfoHeader">Creating Food</h3>
+            <!-- image info -->
+            <p class="imageInfo">One acre of oyster reef provides habitat for 1.5 tons of fish and seafood.
+  </p>
+          </div>
+        </div>
+
+        <!-- row for image and info -->
+        <div class="row customInfoRow">
+          <div class="col-md-8 col-sm-12">
+            <!-- image info header -->
+            <h3 class="imageInfoHeader">Filtering water</h3>
+            <!-- image info -->
+            <p class="imageInfo">One oyster filters 50 gallons of water per day.
+  </p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <!-- image -->
+            <img src="oneOyster.jpg" width="100%" height="200px" class="infoImage">
+          </div>
+        </div>
+        <!-- nav link -->
+        <div id="collaborateLink"></div>
+      </div>
+
+      <h2 id="partnerRestaurants">Save The Sea is collaborating with</h2>
+      <div class="container-fluid">
+      <!-- row for restaurants -->
+      <div class="row customInfoRow">
+        <div class="col-md-6 col-sm-12">
+          <!-- partner info -->
+          <h3 class="partner">Texas Park and Wildlife</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- partner info -->
+          <h3 class="partner">Organics By Gosh</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- partner info -->
+          <h3 class="partner">Quality Seafood Market</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+        <!-- partner info -->
+        <h3 class="partner">Eddie V's</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- partner info -->
+          <h3 class="partner">Clark's</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- partner image -->
+          <h3 class="partner">Pacific Seafood and Oyster</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- partner image -->
+          <h3 class="partner">Perlas</h3>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- partner image -->
+          <h3 class="partner">Captain Benny's Seafood</h3>
         </div>
       </div>
     </div>
-    <!-- info about project -->
-    <div class="container">
-      <h1>hello</h1>
-      <p>Info about project</p>
+
+      <!-- timeline header -->
+      <div id="timelineLink"></div>
+      <h1 id="timelineHeader">Our Time Line </h1>
+      <div class="timeline">
+        <div class="timeLineContainer left">
+          <div class="content">
+            <h2>2018 March</h2>
+            <p>Start collecting Oyster shells from restaurants and stockpile them on a ranch.</p>
+          </div>
+        </div>
+        <div class="timeLineContainer right">
+          <div class="content">
+            <h2>2018 September</h2>
+            <p>We will have collected enough oyster shells to start the curing process this requires leaving the oyster shells outside for 6 months</p>
+          </div>
+        </div>
+        <div class="timeLineContainer left">
+          <div class="content">
+            <h2>2019 March</h2>
+            <p>Texas Park and Wildlife will pickup the oyster shells and take them back to the coast</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- google markers -->
-    <div id="map"></div>
-
 
     <!-- navbar button functionality-->
     <script>
     function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenav").style.width = "250px";
     }
 
     function closeNav() {
@@ -65,7 +265,46 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div id="map"></div>
+    <script>
+      $('a[href*="#"]:not([href="#"])').click(function(){
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname){
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                  $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 2000);
+                return false;
+              }
+          }
+});
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+    </script>
+
+    <!-- google markers api -->
     <script>
       var map;
       // Create a new blank array for all the listing markers.
@@ -76,15 +315,14 @@
           center: {lat: 40.7413549, lng: -73.9980244},
           zoom: 13
         });
-        // These are the real estate listings that will be shown to the user.
-        // Normally we'd have these in a database instead.
+
         var locations = [
-          {title: 'Park Ave Penthouse', location: {lat: 40.7713024, lng: -73.9632393}},
-          {title: 'Chelsea Loft', location: {lat: 40.7444883, lng: -73.9949465}},
-          {title: 'Union Square Open Floor Plan', location: {lat: 40.7347062, lng: -73.9895759}},
-          {title: 'East Village Hip Studio', location: {lat: 40.7281777, lng: -73.984377}},
-          {title: 'TriBeCa Artsy Bachelor Pad', location: {lat: 40.7195264, lng: -74.0089934}},
-          {title: 'Chinatown Homey Space', location: {lat: 40.7180628, lng: -73.9961237}}
+          {title: 'Capt Bennys Seafood', location: {lat: 30.3177458, lng: -97.7102253}},
+          {title: 'Perlas', location: {lat: 30.2499585, lng: -97.75228}},
+          {title: 'Pacific Star Restaurant', location: {lat: 30.483518, lng: -97.8083163}},
+          {title: 'Clarks Oyster Bar', location: {lat: 30.2254184, lng: -97.8368888}},
+          {title: 'EddieV\'s', location: {lat: 30.2664128, lng: -97.7417981}},
+          {title: 'Quality Seafood Market', location: {lat: 30.318313, lng: -97.7144537}}
         ];
         var largeInfowindow = new google.maps.InfoWindow();
         var bounds = new google.maps.LatLngBounds();
@@ -132,5 +370,6 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7lQpueBc1WMAKwoa2Kxggse9C4G7hDX8&v=3&callback=initMap">
     </script>
+
   </body>
 </html>
