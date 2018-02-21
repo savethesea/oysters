@@ -1,0 +1,153 @@
+/* Container holding the image and the text */
+.headerContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*
+Forces carousel image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:500px;
+}
+
+/* for extra spacing */
+.space {
+    width: 100%;
+    height: 200px;
+}
+
+/* change spacing on mobile devices */
+@media screen and (max-width: 767px) {
+  .space {
+    height: 150px;
+  }
+}
+
+/* change spacing on mobile devices */
+@media screen and (max-width: 425px) {
+  .space {
+    height: 94px;
+  }
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+/* partner restaurants header */
+#partnerRestaurants {
+    text-align: center;
+    color: #51bff9;
+    padding: 5px;
+    padding-top: 45px;
+}
+
+/* about header */
+#aboutHeader {
+    padding-top: 80px;
+    color: #51bff9;
+    text-align: center;
+}
+
+/* about info */
+#aboutInfo {
+    color: black;
+    padding-bottom: 80px;
+    text-align: center
+}
+
+/* oyster chart  image */
+#oysterChart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* oyster chart info */
+#oysterChartInfo {
+    text-align: center;
+    color: black;
+    margin-bottom: 200px;
+}
+
+/* oyster chart info */
+#oysterChartName {
+    text-align: center;
+    color: grey;
+    margin-bottom: 40px;
+}
+
+/* google map header */
+#googleMapHeader {
+    color: #51bff9;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* google map */
+#map {
+    height: 400px;
+    margin-bottom: 110px;
+}
+
+/* facts header */
+#factsHeader {
+    color: #51bff9;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 54px;
+}
+
+/* partnering restaurants */
+.partner {
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* custom info row */
+.customInfoRow {
+    margin-bottom: 177px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* letters row */
+#lettersRow {
+    padding-top: 55px;
+}
+
+/* custom info text*/
+.imageInfo {
+    color: grey;
+}
+
+/* image info header */
+.imageInfoHeader {
+    color: black;
+}
+
+/* info image */
+.infoImage {
+    height: 280px;
+}
+
+/* time line header */
+#timelineHeader {
+    text-align: center;
+    color: #51bff9;
+    padding-top: 50px;
+}
+
+/* time line content */
+.content h2 {
+    color: #51bff9;
+}
